@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Sistema de Gerenciamento de Pets</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+	
+</head>
+<body>
+		
+		<div class="container">
+			<h1>Sistema de Gerenciamento de Pets</h1>
+		<hr>
+		
+		<h2>Atualizar Pet</h2>
+		
+		<form action="#" th:action="@{/savePet}" th:object="${pet}"
+			method="POST">
+		
+			<input type="hidden" th:field="*{id}" />
+			
+			
+		<input type="text" th:field="*{petNome}" 
+			class="form-control mb-4 col-4"> 
+			
+			<input type="text" th:field="*{donoNome}"
+			class="form-control mb-4 col-4"> 
+			
+			<input type="text" th:field="*{emailDono}" 
+			class="form-control mb-4 col-4">
+
+		<button type="submit" class="btn btn-info col-2">Atualizar Dados</button>
+			
+		</form>
+		
+		<hr>
+		
+		<a th:href = "@{/}"> Voltar para lista de Pets</a>
+		
+		</div>
+
+</body>
+</html>
