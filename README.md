@@ -1,1 +1,1 @@
-# web-app-sprint3-devops
+# App Spring Boot que representa parte da solução
