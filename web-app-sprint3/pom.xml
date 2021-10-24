@@ -12,6 +12,7 @@
 	<groupId>com.felix</groupId>
 	<artifactId>web-app-sprint3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>web-app-sprint3</name>
 	<description>Demo project for Spring Boot and thymeleaf</description>
 
@@ -31,6 +32,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>spring-boot-starter-tomcat</groupId>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
